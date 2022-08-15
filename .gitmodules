@@ -1,0 +1,7 @@
+[submodule "themes/themes/sada"]
+	path = themes/themes/sada
+	url = https://github.com/darshanbaral/sada.git
+[submodule "public/mar0ne.github.io"]
+	path = public/mar0ne.github.io
+	url = https://github.com/marOne-mrri/mar0ne.github.io.git
+	branch = main
