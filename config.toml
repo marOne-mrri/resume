@@ -1,0 +1,148 @@
+baseURL = "http://mar0ne.com/"
+languageCode = "en-us"
+theme = "sada"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+    name = "mar0ne.com"
+    title = "marouane ourdou's resume"
+    author = "Marouane Ourdou"
+    description = "Objectives"
+    copyright = "Marouane Ourdou © 2022"
+    theme = "dark" # `dark` or `light`
+    useResources = false
+
+    # Profile section
+    [params.profile]
+        name = "Marouane Ourdou"
+        photo = "images/profile.jpg"
+
+    # Section for links to social websites
+    [params.social]
+        title = "Links"
+
+        [[params.social.list]]
+        icon = "fab fa-linkedin-in"
+        url = "https://linkedin.com/in/marouane-ourdou"
+        title = "LinkedIn"
+
+        [[params.social.list]]
+        icon = "fab fa-github"
+        url = "https://github.com/marOne-mrri"
+        title = "GitHub"
+
+        [[params.social.list]]
+        icon = "fab fa-twitter"
+        url = "https://twitter.com/__mar0ne__"
+        title = "twitter"
+
+    # Education section
+    [params.education]
+        title = "Academic qualification"
+
+        [[params.education.list]]
+        degree = "Software Engineer Degree"
+        college = "National School of Applied Sciences Agadir"
+        dates = "2017 - 2022"
+        thesis_title = "computer science, math, web thechnologies, system administration..."
+
+    # Languages section
+    [params.language]
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Advenced"
+				
+        [[params.language.list]]
+        language = "French"
+        level = "Advenced"
+
+        [[params.language.list]]
+        language = "Arabic"
+        level = "Advenced"
+
+    # Interests section
+    [params.hobbies]
+        title = "Hobbies"
+
+        [[params.hobbies.list]]
+        interest = "Travelling"
+		
+		[[params.hobbies.list]]
+        interest = "Music"
+
+        [[params.hobbies.list]]
+        interest = "Gym"
+
+        [[params.hobbies.list]]
+        interest = "Swimming"
+
+    [params.aboutme]
+        description = "I aim to attain a new junior engineer position in the field of DevOps and CLOUD. I hope to add value to society by building and deploying software."
+
+    # Experiences section
+    [params.experiences]
+        title = "Work Experiences"
+
+        [[params.jobs.list]]
+        position = "junior DevOps/CLOUD engineer (intern)"
+        dates = "*February 1, 2022* - *Present*"
+		link = "http://berexia.com"
+        company = "Berexia"
+        details = "built a CI/CD pipline:\n - CI using Jenkins with a container based agent that triggers Ansible to do the Build steps, than create docker artifacts and push them to Harbor image registry. \n- CD using ArgoCD which is triggered by Harbor to retrieve the new images and deploy them to EKS cluster. \n- The micro-services of the app are in one single repo, so the pipeline must give ability to choose what micro-services to build or to build the entire micro-services."
+
+        [[params.jobs.list]]
+        position = "softwware engineer (intern)"
+        dates = "*March 1, 2021 - October 30, 2021*"
+		link = "http://storeino.com"
+        company = "Storeino"
+        details = "full stack engineer:\n - study, build and deploy an event tracking platform.\n- build a restful API using node.js, express.js and mongodb.\n- build a web front-end application using vue.js.\n- deploy the project into the cloud using docker.\n\nback-end developer:\n - Study and build a SaaS that manages COD (warehouse, call center and shipping).\n- Built a restful API using node.js, express.js and mongodb."
+        
+    # Projects section
+    [params.projects]
+        title = "Projects"
+
+        [[params.projects.list]]
+        title = "Badr-challenge"
+        url = "https://github.com/marOne-mrri/badr-challenge"
+        description = "A friend of mine wrote a challenge for me. I solved it.\n*(typeScript, nest.js, Linux)*"
+		
+        [[params.projects.list]]
+        title = "Rent-IT"
+        url = "https://github.com/marOne-mrri/rent-it"
+        description = "Car rental management application for rental agencies.\n*(java, javaFX, MySQL)*"
+		
+		[[params.projects.list]]
+        title = "E-electro"
+        url = "https://github.com/marOne-mrri/E-electro"
+        description = "e-commerce website for electronic products.\n\n *(php, MySQL)*"
+
+		[[params.projects.list]]
+        title = "LinckedClubs"
+        url = "https://github.com/marOne-mrri/linkeClubs"
+        description = "Extracurricular management application, social media like application.\n\n *(javaEE, MySQL)*"
+
+    # Skills section
+    [params.skills]
+        title = "Technical Skills"
+
+        [[params.skills.list]]
+        skill = "Docker, Kubernetes, Jenkins, Ansible, DroneCI, Nginx"
+        skillrating = 75
+                
+        [[params.skills.list]]
+        skill = "Node.js, Express.js, Nest.js, Bash"
+        skillrating = 65
+		
+        [[params.skills.list]]
+        skill = "MySQL, MongoDB"
+        skillrating = 60
+
+        [[params.skills.list]]
+        skill = "Git, Github"
+        skillrating = 70
+
+        [[params.skills.list]]
+        skill = "Java, JavaScript,TypeScript, maven, HTML5, CSS3, OOP"
+        skillrating = 55
